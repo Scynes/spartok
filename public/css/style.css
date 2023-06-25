@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ------------- *
+ *   CSS Reset   *
+ * ------------- */
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+
+/* ---------- *
+ *   GLOBAL   *
+ * ---------- */
+:root {
+    /* fonts */
+    --primary-font: 'Press Start 2P', cursive;
+
+    /* colors */
+    --spartok-purple: rgb(72, 24, 128);
+
+    /* other colors */
+    --white-col: white;
+}
+
+/* ----------- *
+ *   UTILITY   *
+ * ----------- */
+.height-full {
+    height: 100%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.borderless {
+    border: none !important;
+}
+
+.outlineless {
+    outline: none;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+/* -------- *
+ *   FLEX   *
+ * -------- */
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.grow-1 {
+    flex-grow: 1;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.align-space-between {
+    align-items: space-between;
+}
+
+.flex.justify-space-between {
+    justify-content: space-between;
+}
+
+/* -------- *
+ *   GRID   *
+ * -------- */
+.grid {
+    display: grid;
+}
+
+.grid.place-center {
+    place-items: center;
+}
+
+/* --------------- *
+ *   FLEX / GRID   *
+ * --------------- */
+.align-center:is(.flex, .grid) {
+    align-items: center;
+}
+
+.justify-center:is(.flex, .grid) {
+    justify-content: center;
+}
+
+.gap-2rem {
+    gap: 2rem;
+}
+
+.gap-4rem {
+    gap: 4rem;
+}
+
+/* --------------- *
+ *   APPLICATION   *
+ * --------------- */
